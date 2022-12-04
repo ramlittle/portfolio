@@ -234,7 +234,7 @@ main{
 
 .technologies-words{
     text-align:center;
-    height: 50vh;
+    height: 20vh;
     padding: 30px;
     display:flex;
     justify-content: center;
@@ -272,7 +272,7 @@ main{
     flex-direction:row;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 50%;
     width:100%;
     margin: 10px;
 }
@@ -328,11 +328,11 @@ main{
 
 /* projects section */
 .projects-container{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
+    align-items: center;
 }
 .projects-words{
     text-align:center;
@@ -346,7 +346,11 @@ main{
 /* project cards sections */
 .projects-cards{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
 }
 
 /* projects card fonts and links */
@@ -354,6 +358,7 @@ main{
     text-align:center;
     font-size: x-large;
     color:white;
+    width: 80%;
 }
 .projects-sub-cards > h3{
     color: #333;
@@ -371,16 +376,26 @@ main{
     border-radius: 5px;
 }
 .projects-cards-content{
-    height:50vh;
-    width: 90%;
+    height:600px;
+    width: 80%;
     margin: 10px;
     opacity: 0.7;
+    
 }
+
 .projects-cards-content:hover{
     opacity: 1.0;
     border: 2px solid #d5c455;
 }
-
+.scaled-frame {
+    zoom: 0.75;
+    -moz-transform: scale(0.75);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.75);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.75);
+    -webkit-transform-origin: 0 0;
+  }
 
 /* contact me section */
 .contactme-container{
