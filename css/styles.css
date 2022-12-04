@@ -231,7 +231,9 @@ main{
 
 
 /* tech section*/
-
+.technologies{
+    display:none;
+}
 .technologies-words{
     text-align:center;
     height: 20vh;
@@ -350,7 +352,7 @@ main{
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-left: 250px;
+    
 }
 
 /* projects card fonts and links */
@@ -378,16 +380,15 @@ main{
 .projects-cards-content{
     height:600px;
     width: 80%;
-    margin: 10px;
     opacity: 0.7;
-    
+    margin-top: 50px;
 }
 
 .projects-cards-content:hover{
     opacity: 1.0;
     border: 2px solid #d5c455;
 }
-.scaled-frame {
+/* .scaled-frame {
     zoom: 0.75;
     -moz-transform: scale(0.75);
     -moz-transform-origin: 0 0;
@@ -395,7 +396,7 @@ main{
     -o-transform-origin: 0 0;
     -webkit-transform: scale(0.75);
     -webkit-transform-origin: 0 0;
-  }
+  } */
 
 /* contact me section */
 .contactme-container{
@@ -411,6 +412,7 @@ main{
     letter-spacing: 3px;
     text-shadow: 1px 1px black;
 }
+
 /* form section */
 .mainform-container{
     display: flex;

@@ -161,7 +161,9 @@
      .service-cards-content{
       height: 20vh;
      }
-
+.scaled-frame {
+  zoom: 1;
+}
      /* media for projects */
      .projects-container{
       height: auto;
@@ -169,6 +171,9 @@
      }
      .projects-cards{
       flex-direction: column;
+      margin-left:30px;
+      width:100%;
+      
      }
      .projects-words{
       height: 10vh;
@@ -177,7 +182,9 @@
       font-size: xx-large;
      }
      .projects-cards-content{
-      height:40vh;
+      height:300px;
+      width:300px;
+      margin-top:50px;
      }
      
      /* media for contact me form */
