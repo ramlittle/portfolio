@@ -307,25 +307,25 @@
         <section id = 'contactme' class='contactme-container'>
                 <!--full form-->
                 <h2>Contact Me</h2>
-                <form class='mainform-container'>
+                <form class='mainform-container' id="myForm">
                     <div class='form-container'>
                         <!--data gather section-->
                         <div class='form-sub-container'>
                             <label for='name'>Name:</label>
-                            <input type='text' name='name' placeholder='Your Name here'>
+                            <input type='text' name='name' id='name' placeholder='Your Name here'>
                         </div>
                         <div class='form-sub-container'>
                             <label for='email'>Email:</label>
-                            <input type='email' name='email' placeholder = 'example@domain.com'>
+                            <input type='email' name='email' id='email' placeholder = 'example@domain.com'>
                         </div>
                         
                         <div class='form-sub-container'>
                             <label for='subject'>Subject:</label>
-                            <input type='text' name='subject' placeholder ='I would like to hire you!'>
+                            <input type='text' name='subject' id='subject'placeholder ='I would like to hire you!'>
                         </div>
                         <div class='form-sub-container'>
-                            <label for='message'>Message:</label>
-                            <textarea name='message' cols='50'rows='10' placeholder='I need help with my website design...'></textarea>
+                            <label for='email_body'>Message:</label>
+                            <textarea name='email_body' id='email_body'cols='50'rows='10' placeholder='I need help with my website design...'></textarea>
                         </div>
                         <div class='form-btn-container'>
                             <input type = 'submit' value = 'Submit' class = 'form-btn'>
@@ -517,5 +517,44 @@
               setTimeout(carousel, 5000); // Change image every 2 seconds
             }
             </script>
+
+
+            <!-- EMAIL JS -->
+            <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">      (function () {
+        emailjs.init("pTcReyc3M_O8uT4Tx");
+      })();
+    </script>
+    <script>
+emailjs.sendForm("service_xykuslm", "template_hb02619", "#myForm")
+</script> 
+
+<script>
+  // listen to the form submission
+  document
+    .getElementById("myForm")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const serviceID = "service_xykuslm";
+      const templateID = "template_hb02619";
+
+      // send the email here
+      emailjs.sendForm(serviceID, templateID, this).then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("THANK YOU! MESSAGE HAS BEEN SENT");
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          alert("FAILED...", error);
+        }
+      );
+    });
+</script>
 </body>
 </html>
