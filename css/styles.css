@@ -122,7 +122,7 @@ main{
 .home-sub-content-words{
     text-align:center;    
     background-color: white;
-    width: 70%;
+    width: 50%;
     height:100vh;
     display: flex;
     flex-direction: column;
@@ -140,7 +140,7 @@ main{
 }
 .home-sub-image-container{
     height: 100vh;
-    width: 30%;
+    width: 50%;
     flex-direction:row;
     justify-content: center;
     align-items: center;
@@ -317,11 +317,15 @@ main{
     margin:10px;
     text-align: center;
     display:flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     background-color: #d5c455;
     color:white;
     font-size: 30px;
+}
+.service-cards-content > p{
+    font-size:medium;
 }
 .service-cards-content:hover{
     background-color: black;
@@ -527,7 +531,7 @@ footer  h2{
     padding:10px;
     text-decoration:none;
     color:white;
-    font-family:cursive;
+    font-family:serif;
 }
 .footer-card a:hover,
 .footer-card div:hover{
@@ -542,6 +546,9 @@ footer  h2{
 }
 .footer-card h2{
     text-shadow: 1px 1px #d5c455;
+}
+.footer-card address{
+    font-size:medium;
 }
 .copy-section{
     color:white;
