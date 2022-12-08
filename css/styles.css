@@ -362,9 +362,42 @@ main{
 /* projects card fonts and links */
 .projects-sub-cards{
     text-align:center;
-    font-size: x-large;
+    font-size: large;
     color:white;
     width: 80%;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.projects-sub-cards:hover{
+    background-color: black;
+    color:#d5c455;
+    border-radius:10px;
+}
+.one{
+    width: 40%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.one >h3{
+    color:white;
+    text-shadow: 1px 1px black;
+}
+.two{
+    width: 40%;
+}
+.two img{
+    border-radius: 5px;
+}
+.three{
+    display:flex;
+    flex-direction: column;
+    width:10%;
+}
+.projects-sub-cards{
+    margin:30px;
 }
 .projects-sub-cards div{
     margin:5px;
@@ -441,7 +474,7 @@ main{
     margin-left:auto;
     margin-right:auto;
     margin-top:10px;
-    padding: 10px;
+    padding: 5px;
 }
 /* label design */
 .form-sub-container label{
