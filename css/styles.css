@@ -162,7 +162,10 @@ main{
 .home-sub-content-words a:hover{
     background-color: #d5c455;
 }
-
+.hero-image{
+    height:400px;
+    width:400px;
+}
 .resume-section{
     background-color:white;
     height:100vh;
@@ -456,7 +459,10 @@ main{
     letter-spacing: 3px;
     text-shadow: 1px 1px black;
 }
-
+.picsize{
+    height: 220px;
+    width:220px;
+}
 /* form section */
 .mainform-container{
     display: flex;

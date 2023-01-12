@@ -30,7 +30,6 @@
             <nav id ='myLinks'>
                 <a href='#home'>Home</a>
                 <a href='#resume'>Experience</a>
-                <!-- <a href='#technologies'>Technologies</a> -->
                 <a href='#services'>Services</a>
                 <a href='#projects'>Projects</a>
                 <a href='#contactme'>Contact Me</a>
@@ -340,6 +339,22 @@
                         
                         <div class='projects-sub-cards'>
                             <div class='one'>
+                                <h3>Coffee Head</h3>
+                                <div>Created in Wordpress</div>
+                                <div> This is a small Coffee Shop Website in Baguio City. Created for a friend</div>
+                            
+                                <div>
+                                    <a href='https://coffeehead-ramelitomartinez.000webhostapp.com//'target='_blank'>Visit</a>
+                                </div>
+                            </div>
+                            
+                            <div class='two'>
+                                <img src='images/coffeehead.gif' width='80' height='auto'/>
+                            </div>
+                        </div>
+
+                        <div class='projects-sub-cards'>
+                            <div class='one'>
                                 <h3>Noble Trends Unbound, Inc.</h3>
                                 <div>Created in HTML, CSS and JAVASCRIPT</div>
                                 <div>This is a small BPO company website. It currently holds insurance and sales campaigns</div>
@@ -421,9 +436,9 @@
                         <div>Let's Work together!</div>
                         <div>Drop Me a Line!</div>
                         <div>
-                            <img class='mySlides' src ='images/ram_home2.png' alt='Ram's Image'>
-                            <img class='mySlides' src = 'images/ram_contact_me1b.png' alt ='Ram's Image'>
-                            <img class='mySlides' src = 'images/ram_home1b.png' alt ='Ram's Image'>
+                            <img class='mySlides picsize' src ='images/ram_home2.png' alt='Ram's Image'>
+                            <img class='mySlides picsize' src = 'images/ram_contact_me1b.png' alt ='Ram's Image'>
+                            <img class='mySlides picsize' src = 'images/ram_home1b.png' alt ='Ram's Image'>
                         </div>
                     </div>
                 </form>
@@ -469,20 +484,6 @@
                 </a>
             </div>
             
-            <!-- facebook
-            <div class='footer-card-container'>
-                <a href='https://www.facebook.com/mar.ram.3979/'>
-                    <img src ='images/social-facebook.png' alt='facebook photo'>
-                </a>
-            </div> -->
-
-            <!-- instagram
-            <div class='footer-card-container'>
-                <a href='https://www.instagram.com/onthego_ram/'>
-                    <img src ='images/social-instagram.svg' alt='instagram photo'>
-                </a>
-            </div> -->
-
         </section>
 
         <!--menu-->
@@ -529,7 +530,8 @@
                     address: <address>Baguio City, Benguet 2600 Philippines</address>
                 </div>
                 <div>
-                    phone: (074)-246-9688
+                    Landline: (074)-246-9688 <br>
+                    Mobile: (+63)905-100-1775
                 </div>
                 <div>
                     email: <a href='mailto:ramelitomartinez@gmail.com'>ramelitomartinez@gmail.com</a>
@@ -540,7 +542,7 @@
       
     </footer>
     <section class='copy-section'>
-        Copyright &copy 2022 All rights reserved
+        Copyright &copy 2023 All rights reserved
     </section>
 
 
@@ -584,16 +586,13 @@
                 x.style.display = 'none';
               }
 
-             
-              
             }
         </script>
         <!-- SCRIPT FOR CAROUSEL SLIDESHOW FROM CONTACT ME SECTION
-        Also taken from w3schools -->
+            Also taken from w3schools -->
         <script>
             var myIndex = 0;
             carousel();
-            
             function carousel() {
               var i;
               var x = document.getElementsByClassName('mySlides');
@@ -603,57 +602,62 @@
               myIndex++;
               if (myIndex > x.length) {myIndex = 1}    
               x[myIndex-1].style.display = 'block';  
-              setTimeout(carousel, 5000); // Change image every 2 seconds
+              setTimeout(carousel, 5000); // Change image every 5 seconds
             }
             </script>
 
 
             <!-- EMAIL JS -->
             <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-    ></script>
+                type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+            ></script>
 
-    <script type="text/javascript">      (function () {
-        emailjs.init("pTcReyc3M_O8uT4Tx");
-      })();
-    </script>
-    <script>
-emailjs.sendForm("service_xykuslm", "template_aj1q97o", "#myForm")
-</script> 
+            <script type="text/javascript">      (function () {
+                emailjs.init("pTcReyc3M_O8uT4Tx");
+            })();
+            </script>
+            
+            <script>
+            emailjs.sendForm("service_xykuslm", "template_aj1q97o", "#myForm")
+            </script> 
 
-<script>
-  // listen to the form submission
-  document
-    .getElementById("myForm")
-    .addEventListener("submit", function (event) {
-      event.preventDefault();
+            <script>
+                // listen to the form submission
+                document
+                    .getElementById("myForm")
+                    .addEventListener("submit", function (event) {
+                    event.preventDefault();
 
-      const serviceID = "service_xykuslm";
-      const templateID = "template_aj1q97o";
+                    const serviceID = "service_xykuslm";
+                    // const templateID = "template_aj1q97o";
+                    const templateID = "template_aj1q97oxxx";
 
-      // send the email here
-      emailjs.sendForm(serviceID, templateID, this).then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-          alert("THANK YOU! MESSAGE HAS BEEN SENT");
-          
-        },
-        (error) => {
-          console.log("FAILED...", error);
-          alert("FAILED...", error);
-        }
-      );
-      
-    });
-</script>
+                    // send the email here
+                    emailjs.sendForm(serviceID, templateID, this).then(
+                        (response) => {
+                        console.log("SUCCESS!", response.status, response.text);
+                        alert("THANK YOU! MESSAGE HAS BEEN SENT");
                         
-<!--  PAGE COUNTER ADDED --> 
-<!-- Badge Code - Do Not Change The Code -->
-<a class="hitCounter" href="https://visitorshitcounter.com/" 
-   style="text-align:center"
-   target="_blank" title="Hit counter" 
-   data-name="0e12168622a9a30f69eda52401edf5c4|5|external|1|#0099cc|#f5f5f5|small|s-hit">Hit Counter</a><script>document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v="+Date.now()+"'><\/script>");</script>
-<!-- Badge Code End Here -->
+                        },
+                        (error) => {
+                        console.log("FAILED...", error);
+                        alert("FAILED...", error);
+                        }
+                    );
+                    
+                    });
+            </script>
+                        
+            <!--  PAGE COUNTER ADDED --> 
+            <a class="hitCounter" href="https://visitorshitcounter.com/" 
+                style="text-align:center"
+                target="_blank" title="Hit counter" 
+                data-name="0e12168622a9a30f69eda52401edf5c4|5|external|1|#0099cc|#f5f5f5|small|s-hit">Hit Counter
+            </a>
+            <script>
+                document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v="+Date.now()+"'><\/script>");
+            </script>
+            <!-- Badge Code End Here -->
 </body>
 </html>
